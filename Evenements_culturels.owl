@@ -21,6 +21,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#EstArtisteMembreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#EstArtisteMembreDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estMembreDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#EstArtisteMembreDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#EstSectionMembreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#EstSectionMembreDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estMembreDe"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Section"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe">
@@ -33,7 +55,8 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#aCree -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#aCree">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Auteur"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estCreeePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Oeuvre"/>
     </owl:ObjectProperty>
     
@@ -48,6 +71,61 @@
     
 
 
+<<<<<<< HEAD
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#apparaitDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#apparaitDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Oeuvre"/>
+=======
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estCreeePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estCreeePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Oeuvre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
+    </owl:ObjectProperty>
+    
+
+
+<<<<<<< HEAD
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDans">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#apparaitDans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Vocaliste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDansGroupe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDansGroupe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Populaire"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Partition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDansOpera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDansOpera">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#chanteDans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Lyrique"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+    
+
+
+=======
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDActeurs -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDActeurs">
@@ -61,8 +139,10 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDe -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estMembreDe"/>
     </owl:ObjectProperty>
     
 
@@ -113,6 +193,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estMembreDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estMembreDe">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Interprete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estRepresentationDe -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estRepresentationDe">
@@ -122,11 +212,40 @@
     
 
 
-    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueDans -->
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueUnRoleDans -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueDans">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Oeuvre"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueUnRoleDans">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#apparaitDans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Acteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Piece_de_theatre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueUneDanseDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueUneDanseDans">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#apparaitDans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Danseur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Danse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#joueStyle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Interprete"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreMusical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#orchestrePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#orchestrePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Orchestre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
     </owl:ObjectProperty>
     
 
@@ -175,6 +294,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Acteur">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Agora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Agora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Interieur"/>
     </owl:Class>
     
 
@@ -260,15 +387,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Batteur">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Batterie"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Batterie"/>
+            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
     </owl:Class>
@@ -294,7 +416,21 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Bois -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Bois">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Section"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Section"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeMusiciens"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Flutiste"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeMusiciens"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Flutiste"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -303,6 +439,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#BrassBand">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Orchestre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Lyrique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Lyrique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Vocaliste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Populaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Populaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Vocaliste"/>
     </owl:Class>
     
 
@@ -318,7 +470,17 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Interprete"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Interprete"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -326,7 +488,27 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifDeDanse -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifDeDanse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+                    <owl:Restriction>
+<<<<<<< HEAD
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+=======
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeDanseurs"/>
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Danseur"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+<<<<<<< HEAD
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+=======
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifTheatre"/>
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
     </owl:Class>
     
 
@@ -334,7 +516,26 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+                    <owl:Restriction>
+<<<<<<< HEAD
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+=======
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeMusiciens"/>
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Musicien"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+<<<<<<< HEAD
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+=======
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifTheatre"/>
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
     </owl:Class>
     
 
@@ -342,14 +543,32 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifTheatre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifTheatre">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+                    <owl:Restriction>
+<<<<<<< HEAD
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+=======
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDActeurs"/>
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Acteur"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+<<<<<<< HEAD
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+=======
+>>>>>>> c668604f951fa589e012ca9ea1ba74db9f5a3ddf
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Comique -->
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Comédie -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Comique">
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Comédie">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreTheatral"/>
     </owl:Class>
     
@@ -358,7 +577,37 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Cordes -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Cordes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Section"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Section"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeMusiciens"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitariste"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Pianiste"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Violoniste"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeMusiciens"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Flutiste"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitariste"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Violoniste"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -387,10 +636,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Danse_Moderne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Danse_Moderne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreDanse"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Danseur -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Danseur">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Drame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Drame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreTheatral"/>
     </owl:Class>
     
 
@@ -449,6 +714,17 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Orchestre"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Cuivres"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Rythme"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -457,6 +733,10 @@
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -470,16 +750,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Flutiste">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Flûte"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Flûte"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
     </owl:Class>
     
 
@@ -514,6 +790,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreOpera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreOpera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Genre"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreTheatral -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreTheatral">
@@ -534,12 +818,56 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitariste">
         <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitare"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Hip_Hop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Hip_Hop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreDanse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GuitaristeMelodique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GuitaristeMelodique">
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitariste"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#EstArtisteMembreDe"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Rythme"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GuitaristeRythmique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GuitaristeRythmique">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitariste"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitare"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#EstArtisteMembreDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Rythme"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -621,7 +949,46 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Oeuvre"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Partition"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Piece_de_theatre"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera_Comedie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera_Comedie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Interieur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera_Comique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera_Comique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreOpera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera_Lyrique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Opera_Lyrique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreOpera"/>
     </owl:Class>
     
 
@@ -629,7 +996,17 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Orchestre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Orchestre">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#orchestrePar"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Artiste"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
@@ -643,6 +1020,18 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Orchestre"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Bois"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Cuivres"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Rythme"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -652,6 +1041,10 @@
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:cardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -670,6 +1063,19 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Orchestre"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Bois"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Cordes"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Cuivres"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Rythme"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -680,6 +1086,10 @@
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estFormeDeSections"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:cardinality>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -701,16 +1111,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Percussionniste">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Percussions"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Percussions"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
     </owl:Class>
     
 
@@ -748,16 +1154,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Pianiste">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Piano"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Piano"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
     </owl:Class>
     
 
@@ -774,6 +1176,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Piece_de_theatre">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Oeuvre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Place_De_La_Comedie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Place_De_La_Comedie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Exterieur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreMusical"/>
     </owl:Class>
     
 
@@ -814,16 +1232,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Saxophoniste">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Saxophone"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Saxophone"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
     </owl:Class>
     
 
@@ -831,14 +1245,36 @@
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Section -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Section">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#CollectifMusical"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#orchestrePar"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Tragique -->
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Tragicomédie -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Tragique">
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Tragicomédie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreTheatral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Tragédie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Tragédie">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#GenreTheatral"/>
     </owl:Class>
     
@@ -864,16 +1300,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Violoniste">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
-                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Violon"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Violon"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instrumentiste"/>
     </owl:Class>
     
 
@@ -921,10 +1353,64 @@
     
 
 
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#George_Harrison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#George_Harrison">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Populaire"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitare"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitare -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitare">
         <rdf:type rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instruments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#John_Lennon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#John_Lennon">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Populaire"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Guitare"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Paul_McCartney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Paul_McCartney">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Populaire"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Basse"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
     </owl:NamedIndividual>
     
 
@@ -945,10 +1431,58 @@
     
 
 
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Ringo_Starr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Ringo_Starr">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Chanteur_Populaire"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#JoueDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Batterie"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Saxophone -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Saxophone">
         <rdf:type rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Instruments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#The_Beatles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#The_Beatles">
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Collectif"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#George_Harrison"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#John_Lennon"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Paul_McCartney"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#estComposeDe"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/lfresquet/ontologies/2017/1/evenements_culturels#Ringo_Starr"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
     </owl:NamedIndividual>
     
 
@@ -962,5 +1496,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
